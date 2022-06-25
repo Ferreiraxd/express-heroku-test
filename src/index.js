@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const mainController = require('./UserInterface/Controllers/main');
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const { errorHandler, logErrors, boomErrorHandler } = require('./UserInterface/Middleware/error.handler');
 
